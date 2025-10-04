@@ -1,0 +1,138 @@
+/* Container for the registration form */
+.register-container {
+  width: 60%; /* Increased width for better form space */
+  margin: 30px auto; /* Centering with margin */
+  background-color: #f5f1e9; /* Light background color */
+  padding: 30px; /* Padding for spacing */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  font-family: 'Arial', sans-serif; /* Font style */
+}
+
+h2 {
+  text-align: center; /* Center-aligned heading */
+  font-size: 28px; /* Larger font for the header */
+  color: #333; /* Darker color for text */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column; /* Stack form elements */
+  gap: 15px; /* Gap between form elements */
+}
+
+/* Label styling */
+label {
+  font-weight: bold;
+  color: #555; /* Slightly lighter color for the label */
+  margin-top: 12px;
+}
+
+/* Styling for input fields and select dropdowns */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+/* Styling for name input fields (First and Last) */
+.name-fields {
+  display: flex;
+  gap: 15px;
+}
+
+.name-fields input {
+  width: 48%; /* 48% width to maintain space between inputs */
+}
+
+/* Styling for address fields */
+.address-fields {
+  display: flex;
+  gap: 15px;
+}
+
+.address-fields input, .address-fields select {
+  width: 48%; /* Maintain 48% width */
+}
+
+/* Styling for pet type selection (Radio buttons) */
+.pet-type {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.pet-type label {
+  font-weight: normal;
+  font-size: 16px; /* Slightly smaller font for radio buttons */
+}
+
+/* Submit button styling */
+.submit-btn {
+  padding: 14px 20px; /* Padding for button */
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.submit-btn:hover {
+  background-color: #45a049; /* Darker shade on hover */
+}
+
+/* Success message styling */
+.success-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4BB543; /* green */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  z-index: 9999;
+  animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+  10%, 90% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .register-container {
+    width: 80%; /* Increased width on smaller screens */
+    padding: 20px; /* Reduced padding */
+  }
+
+  .name-fields, .address-fields {
+    flex-direction: column; /* Stack inputs vertically on small screens */
+  }
+
+  .pet-type {
+    flex-direction: column; /* Stack radio buttons vertically */
+    gap: 10px;
+  }
+}

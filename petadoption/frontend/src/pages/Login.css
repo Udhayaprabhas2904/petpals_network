@@ -1,0 +1,88 @@
+/* Center the login box */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa; /* Light background */
+}
+
+/* Login box */
+.login-box {
+    width: 400px;
+    padding: 70px;
+    background: #fff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title */
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+/* Social login buttons */
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.facebook-btn, .google-btn {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.facebook-btn {
+    background-color: #3b5998; /* Facebook blue */
+}
+
+.google-btn {
+    background-color: #db4437; /* Google red */
+}
+
+/* Input fields */
+.login-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Login button */
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+/* Forgot password and register links */
+.forgot-password, .register-link {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.forgot-password a, .register-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password a:hover, .register-link a:hover {
+    text-decoration: underline;
+}
