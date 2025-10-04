@@ -23,8 +23,6 @@
 * **Backend & Database:** MySQL
 * **Authentication:** Firebase(for login)
 * **Deployment:** Netlify(https://pet-adoption-d9977.web.app/)
-<img width="994" height="123" alt="image" src="https://github.com/user-attachments/assets/75567a55-f779-45d1-a4b0-f2ccf754d208" />
-
 
 ---
 
