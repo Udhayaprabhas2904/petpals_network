@@ -61,6 +61,8 @@ npm start
 
 
 ---
+
+**Check out Journal :** https://ijsrem.com/download/petpals-network/
 **Architecture Diagram :**
 <img width="1118" height="1486" alt="image" src="https://github.com/user-attachments/assets/c25f65ca-c4df-41fe-a2ec-f5755dd1a3f0" />
 
